@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc1 = new Scanner(System.in);
-		Scanner sc2 = new Scanner(System.in);
 
 		int[] scNum = new int[2];
 		scNum[0] = sc1.nextInt();
@@ -14,7 +13,7 @@ public class Main {
 		int[] arrNum = new int[scNum[0]];
 
 		for (int i = 0; i < scNum[0]; i++) {
-			arrNum[i] = sc2.nextInt();
+			arrNum[i] = sc1.nextInt();
 		}
 
 		String result = "";
