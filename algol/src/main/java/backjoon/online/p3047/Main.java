@@ -8,15 +8,15 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc1 = new Scanner(System.in);
+
 		int[] num = new int[3];
-		num[0] = sc1.nextInt();
-		num[1] = sc1.nextInt();
-		num[2] = sc1.nextInt();
+		num[0] = Integer.parseInt(sc1.next());
+		num[1] = Integer.parseInt(sc1.next());
+		num[2] = Integer.parseInt(sc1.next());
 
 		Arrays.sort(num);
 
-		Scanner sc2 = new Scanner(System.in);
-		String str = sc2.nextLine();
+		String str = sc1.next();
 
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		map.put("A", num[0]);
@@ -26,8 +26,7 @@ public class Main {
 		System.out.printf("%d %d %d\n", map.get(String.valueOf(str.charAt(0))),
 				map.get(String.valueOf(str.charAt(1))),
 				map.get(String.valueOf(str.charAt(2))));
-		
-		sc2.close();
+
 		sc1.close();
 
 	}
